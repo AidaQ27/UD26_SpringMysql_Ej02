@@ -42,7 +42,7 @@ public class AsignadoController {
 		
 		Asignado_xid=asignadoServiceImpl.asignadoXID(id);
 		
-		System.out.println("Asignado XID: "+Asignado_xid);
+		//System.out.println("Asignado XID: "+Asignado_xid);
 		
 		return Asignado_xid;
 	}
@@ -62,7 +62,7 @@ public class AsignadoController {
 		
 		Asignado_actualizado = asignadoServiceImpl.actualizarAsignado(Asignado_seleccionado);
 		
-		System.out.println("El Asignado actualizado es: "+ Asignado_actualizado);
+		//System.out.println("El Asignado actualizado es: "+ Asignado_actualizado);
 		
 		return Asignado_actualizado;
 	}

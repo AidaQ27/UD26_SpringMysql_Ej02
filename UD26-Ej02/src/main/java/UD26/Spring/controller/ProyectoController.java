@@ -42,7 +42,7 @@ public class ProyectoController {
 		
 		Proyecto_xid=proyectoServiceImpl.proyectoXID(id);
 		
-		System.out.println("Proyecto XID: "+ Proyecto_xid);
+		//System.out.println("Proyecto XID: "+ Proyecto_xid);
 		
 		return Proyecto_xid;
 	}
@@ -60,7 +60,7 @@ public class ProyectoController {
 		
 		Proyecto_actualizado = proyectoServiceImpl.actualizarProyecto(Proyecto_seleccionado);
 		
-		System.out.println("El Proyecto actualizado es: "+ Proyecto_actualizado);
+		//System.out.println("El Proyecto actualizado es: "+ Proyecto_actualizado);
 		
 		return Proyecto_actualizado;
 	}

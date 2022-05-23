@@ -44,7 +44,7 @@ public class CientificosController {
 			
 			Cientificos_xid=cientificoServiceImpl.cientificosXID(id);
 			
-			System.out.println("Cientificos XID: "+ Cientificos_xid);
+			//System.out.println("Cientificos XID: "+ Cientificos_xid);
 			
 			return Cientificos_xid;
 		}
@@ -62,7 +62,7 @@ public class CientificosController {
 			
 			Cientificos_actualizado = cientificoServiceImpl.actualizarCientificos(Cientificos_seleccionado);
 			
-			System.out.println("El Cientificos actualizado es: "+ Cientificos_actualizado);
+			//System.out.println("El Cientificos actualizado es: "+ Cientificos_actualizado);
 			
 			return Cientificos_actualizado;
 		}
