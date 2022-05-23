@@ -1,0 +1,37 @@
+create database ej02;
+
+use ej02;
+
+create table cientificos (
+id int primary key auto_increment,
+nombre varchar(255)
+);
+
+create table proyecto (
+id int primary key auto_increment,
+nombre varchar(255),
+horas int
+);
+
+create table asignado (
+id int primary key auto_increment,
+id_cientifico int, 
+id_proyecto int, 
+foreign key(id_cientifico) references cientificos(id) on delete cascade,
+foreign key(id_proyecto) references proyecto(id) on delete cascade
+);
+
+
+insert into cientificos (nombre) values ('Mario');
+insert into cientificos (nombre) values ('Maria');
+insert into cientificos (nombre) values ('Mariella');
+insert into cientificos (nombre) values ('Martin');
+
+insert into proyecto (nombre, horas) values ('XPA', 300);
+insert into proyecto (nombre, horas) values ('DFF', 250);
+insert into proyecto (nombre, horas) values ('DFE', 750);
+insert into proyecto (nombre, horas) values ('AQF', 400);
+
+insert into asignado (id_cientifico, id_proyecto) values (2,1);
+insert into asignado (id_cientifico, id_proyecto) values (1,2);
+insert into asignado (id_cientifico, id_proyecto) values (3,3);
